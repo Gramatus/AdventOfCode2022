@@ -1,3 +1,6 @@
+# Local data
+data/
+
 # node
 node_modules/
 dist/
