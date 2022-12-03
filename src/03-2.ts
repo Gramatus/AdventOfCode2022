@@ -10,18 +10,17 @@ type Enumerate<
   ? Acc[number]
   : Enumerate<N, [...Acc, Acc["length"]]>;
 
-type Range<F extends number, T extends number> = Exclude<
-  Enumerate<T>,
-  Enumerate<F>
->;
+type Range<F extends number, T extends number> =
+  | Exclude<Enumerate<T>, Enumerate<F>>
+  | T;
 const firstUpperCaseCode = 65;
-const lastUpperCaseCodePlusOne = 91;
+const lastUpperCaseCode = 90;
 const firstLowerCaseCode = 97;
-const lastLowerCaseCodePlusOne = 123;
+const lastLowerCaseCode = 122;
 
 type charCode =
-  | Range<typeof firstUpperCaseCode, typeof lastUpperCaseCodePlusOne>
-  | Range<typeof firstLowerCaseCode, typeof lastLowerCaseCodePlusOne>;
+  | Range<typeof firstUpperCaseCode, typeof lastUpperCaseCode>
+  | Range<typeof firstLowerCaseCode, typeof lastLowerCaseCode>;
 
 interface ruckSack {
   compartmentA: charCode[];
