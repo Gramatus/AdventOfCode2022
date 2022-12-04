@@ -37,5 +37,5 @@ const overlappingPairs = pairs.filter(
 );
 
 console.log(
-  `The number of assignment pairs where on range fully contains the other are: ${overlappingPairs.length}`
+  `The number of assignment pairs where one range fully contains the other are: ${overlappingPairs.length}`
 );
