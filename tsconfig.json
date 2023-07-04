@@ -11,8 +11,7 @@
     "allowJs": false,
     "resolveJsonModule": true,
     "downlevelIteration": true,
-    "noEmit": false,
-    "keyofStringsOnly": true
+    "noEmit": false
   },
   "include": ["src/**/*"],
   "exclude": [
