@@ -8,6 +8,10 @@
     },
     "ghcr.io/devcontainers/features/azure-cli:1": {
       "version": "latest"
+    },
+    "node": {
+      "version": "lts",
+      "nodeGypDependencies": true
     }
   }
 }
